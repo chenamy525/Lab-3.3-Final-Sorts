@@ -47,7 +47,7 @@ public class finalSorts {
 	equivalent. The recursion is similar to mergeSort because it divides and conquers the array. Use
 	the partition method in this algorithm. Return the new position of the pivot. returns position of pivot */
 	public static void quickSort(int[] list1, int front, int back) {
-		int pos = partition(list1, front, back);
+		partition(list1, front, back);
 		
 		
 		
