@@ -22,7 +22,7 @@ public class finalSorts {
 				j++;
 			}
 			if (list[i].compareTo(list2[j]) > 0) {
-				
+				//
 			}
 				
 		}
