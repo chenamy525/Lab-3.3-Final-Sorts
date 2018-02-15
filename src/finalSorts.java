@@ -3,12 +3,32 @@ public class finalSorts {
 
 	public static void main(String[] args) {
 		
-		
+		String[] test1 = {"bapple", "goober", "zoop", "moo", "boi" };
+		String[] test2 = {"mahogony", "cherry", "oh", "bonono", "posta"};
+		int[] test3 = {4, 1, 5, 7, 12, 19, 0, 1};
 		
 		
 		
 		
 	}
+	
+	
+	public static String[] merge(String[] list, String[] list2) {
+		int i = 0;
+		int j = i+1;
+		
+		while (i < list.length && j < list2.length) {
+			if (list[i].compareTo(list2[j]) < 0) {
+				j++;
+			}
+			if (list[i].compareTo(list2[j]) > 0) {
+				
+			}
+				
+		}
+	}
+	
+	
 	
 	/* Write a method that recursively separates the list into two halves and calls mergeSort on both
 	halves. When we reach two halves that have length 1, then merge the arrays together. Return the 
@@ -47,10 +67,11 @@ public class finalSorts {
 	equivalent. The recursion is similar to mergeSort because it divides and conquers the array. Use
 	the partition method in this algorithm. Return the new position of the pivot. returns position of pivot */
 	public static void quickSort(int[] list1, int front, int back) {
-		partition(list1, front, back);
-		
-		
-		
+		if (back > front) {
+			int pivPos = partition(list1, front, back);
+			quickSort(list1, front, pivPos); //left
+			quickSort(list1, pivPos, back);	//right
+		}
 	}
 	
 	
