@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class finalSorts {
 
@@ -8,6 +9,13 @@ public class finalSorts {
 		int[] test3 = {4, 1, 5, 7, 12, 19, 0, 1};
 		
 		
+		/*mergeSort(test1, test2);
+		System.out.println(Arrays.toString(test1, test2));*/
+		
+		
+		quickSort(test3, test3[0], test3.length-1); //fix
+		quickSort(test3, test3.length-1, test3[0]);
+		System.out.println(Arrays.toString(test3));
 		
 		
 	}
@@ -16,7 +24,7 @@ public class finalSorts {
 	public static String[] merge(String[] list, String[] list2) {
 		int i = 0;
 		int j = i+1;
-		
+		String[] list3;
 		while (i < list.length && j < list2.length) {
 			if (list[i].compareTo(list2[j]) < 0) {
 				j++;
