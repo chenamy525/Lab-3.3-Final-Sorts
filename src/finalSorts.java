@@ -32,7 +32,7 @@ public class finalSorts {
 			if (list[i].compareTo(list2[j]) > 0) {
 				//
 			}
-				
+			
 		}
 	}
 	
